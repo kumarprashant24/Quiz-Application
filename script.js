@@ -73,7 +73,7 @@ mainBtn.addEventListener('click',function(e){
             
             
             // Question queue --------------------------------------------------------------------------------------------------------
-            if(loading.length === 0)
+            if(loading ===undefined || loading.length === 0)
             {
 
             }
@@ -112,7 +112,7 @@ mainBtn.addEventListener('click',function(e){
     var userFirstName = section1.firstElementChild.firstElementChild.lastElementChild.previousElementSibling.previousElementSibling.lastElementChild.value;
     var userLastName = section1.firstElementChild.firstElementChild.lastElementChild.previousElementSibling.lastElementChild.value;
 
-      if(loading.length==0)
+      if(loading === undefined || loading.length==0)
       {
           alert("Ask admin to set the questions first");
       }
