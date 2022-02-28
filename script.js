@@ -73,7 +73,7 @@ mainBtn.addEventListener('click',function(e){
             
             
             // Question queue --------------------------------------------------------------------------------------------------------
-            if(loading.length() === 0)
+            if(loading.length === 0)
             {
 
             }
