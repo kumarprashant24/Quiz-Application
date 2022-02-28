@@ -73,24 +73,32 @@ mainBtn.addEventListener('click',function(e){
             
             
             // Question queue --------------------------------------------------------------------------------------------------------
-            for (var i = 0; i < loading.length; i++) {
+            if(loading.length() === 0)
+            {
 
-                var main = document.createElement('div');
-                var eleInner = document.createElement('div');
-                var btnDiv = document.createElement('div');
-                var btn = document.createElement('button');
-                btn.className = "btn btn-danger";
-                btnDiv.append(btn);
-                
-                main.className = "mb-3 bg-dark text-light p-3 d-flex justify-content-between";
-                main.append(eleInner);
-                main.append(btnDiv);
-                eleInner.innerHTML = loading[i].Question;
-                btn.innerHTML = "Delete";
-                btn.setAttribute('id',IdUni++);
-
-                qlist.append(main);
             }
+            else
+            {
+                for (var i = 0; i < loading.length; i++) {
+
+                    var main = document.createElement('div');
+                    var eleInner = document.createElement('div');
+                    var btnDiv = document.createElement('div');
+                    var btn = document.createElement('button');
+                    btn.className = "btn btn-danger";
+                    btnDiv.append(btn);
+                    
+                    main.className = "mb-3 bg-dark text-light p-3 d-flex justify-content-between";
+                    main.append(eleInner);
+                    main.append(btnDiv);
+                    eleInner.innerHTML = loading[i].Question;
+                    btn.innerHTML = "Delete";
+                    btn.setAttribute('id',IdUni++);
+    
+                    qlist.append(main);
+                }
+            }
+          
         }
         else {
             section2.style.display = "block";
