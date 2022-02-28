@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+html,body{
+    height: 90%;
+
+  
+}
+.optColor{
+    background-color: yellow;
+    color: black;
+}
+
+.background{
+    background-image: url(./kishore-v-tuSz_FGc3zg-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#section{
+    display: none;
+}
+#section2{
+    display: none;
+}
+#section3{
+    display: none;
+}
+#section4{
+    display: none;
+}
